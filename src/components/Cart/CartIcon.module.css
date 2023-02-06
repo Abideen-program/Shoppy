@@ -1,0 +1,23 @@
+.cartIconContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    cursor: pointer;
+}
+
+.cartIcon {
+    width: 24px;
+    height: 24px;
+}
+
+.itemCount{
+    position: absolute;
+    font-size: 1.2rem;
+    font-weight: bold;
+    bottom: 0.2rem;
+}
+
