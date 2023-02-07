@@ -1,0 +1,47 @@
+.box {
+  margin: 1.5rem 0;
+  width: 18rem;
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  box-shadow: 2rem 2rem 3.4rem rgba(0, 0, 0, 0.03);
+  border: 1px solid #cce7d0;
+  border-radius: 4px;
+}
+
+.box:hover {
+  box-shadow: 1rem 1rem 5.4rem rgba(70, 62, 221, 0.1);
+}
+
+.box img{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.box h6{
+    display: inline-block;
+    font-size: 1rem;
+    padding: 0.9rem 0.9rem 0.7rem;
+    color: #088178;
+    background: #DBF4F6;
+    border-radius: 4px;
+}
+
+.box:nth-child(2) h6 {
+  background: #F8E7F1;
+}
+
+.box:nth-child(3) h6 {
+  background: #cdebbc;
+}
+
+.box:nth-child(4) h6 {
+  background: #E7F5FF;
+}
+
+.box:nth-child(5) h6 {
+  background: #E3DDF4;
+}
+
+.box:nth-child(6) h6 {
+  background: #fff2e5;
+}
