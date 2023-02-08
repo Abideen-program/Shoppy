@@ -3,6 +3,7 @@ import Features from "../../Features/Features";
 import FeaturedProducts from "../../FeaturedProducts/FeaturedProducts";
 import Banner from "../../Banner/Banner";
 import NewArrival from "../../NewArrival/NewArrival";
+import SmallBanners from "../../SmallBanners/SmallBanners";
 const Home = () => {
   return (
     <>
@@ -11,6 +12,7 @@ const Home = () => {
       <FeaturedProducts />
       <Banner />
       <NewArrival />
+      <SmallBanners />
     </>
   );
 };

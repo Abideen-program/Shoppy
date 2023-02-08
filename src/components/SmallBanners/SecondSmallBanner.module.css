@@ -1,0 +1,39 @@
+.banner {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(../../assets/images/banner/b10.jpg);
+    background-size: cover;
+    background-position: center center;
+    min-width: 54rem;
+    height: 50vh;
+    margin-bottom: 4rem;
+  }
+  
+  .banner h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #fff;
+    line-height: 5.4rem;
+  }
+  
+  .banner h4 {
+    font-size: 2rem;
+    font-weight: 300;
+    color: #fff;
+  }
+  
+  .banner p {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    color: #fff;
+  }
+  
+  .banner:hover button {
+    background: #088178;
+    border: 1px solid #088178;
+  }
+  

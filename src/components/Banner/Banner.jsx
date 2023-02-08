@@ -5,7 +5,7 @@ const Banner = () => {
         <div className={classes.banner}>
             <h4>Repair Services</h4>
             <h2>Up to <span>70% off</span> - All T-shirt & Accessories</h2>
-            <Button>Explore More</Button>
+            <Button buttonType='normal'>Explore More</Button>
         </div>
     )
 }
