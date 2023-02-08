@@ -1,8 +1,8 @@
 // import { useState, useEffect } from "react";
-// import FeaturedProduct from "./FeaturedProduct";
-// import classes from "./FeaturedProducts.module.css";
+// import FeaturedProduct from "../FeaturedProducts/FeaturedProduct";
+// import classes from "./NewArrival.module.css";
 
-// const FeaturedProducts = () => {
+// const NewArrival = () => {
 //   const [products, setProducts] = useState([]);
 
 //   const fetchFeaturedProducts = async () => {
@@ -32,12 +32,12 @@
 //   }, []);
 
 //   return (
-//     <div className={classes.products}>
-//       <h2>Feature Products</h2>
+//     <div className={classes.newArrival}>
+//       <h2>New Arrivals</h2>
 //       <p>Summer Collections New Modern Designs</p>
 //       <div className={classes.proContainer}>
 //         {products
-//           .filter((_, index) => index < 4)
+//           .filter((_, index) => index > 11)
 //           .map((product) => {
 //             return <FeaturedProduct product={product} key={product.id} />;
 //           })}
@@ -46,19 +46,19 @@
 //   );
 // };
 
-// export default FeaturedProducts;
+// export default NewArrival;
 
 import UseProducts from "../useProducts/UseProducts";
 
-const FeaturedProducts = () => {
+const NewArrival = () => {
   const newArrivals = () => {
     return [
-      "Featured Products",
-      "https://shoppy-baa30-default-rtdb.firebaseio.com/featuredProducts.json",
+      "New Arrivals",
+      "https://shoppy-baa30-default-rtdb.firebaseio.com/newArrivals.json",
     ];
   };
 
   return <UseProducts onNew={newArrivals} />;
 };
 
-export default FeaturedProducts;
+export default NewArrival;
