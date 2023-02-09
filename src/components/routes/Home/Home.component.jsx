@@ -4,6 +4,7 @@ import FeaturedProducts from "../../FeaturedProducts/FeaturedProducts";
 import Banner from "../../Banner/Banner";
 import NewArrival from "../../NewArrival/NewArrival";
 import SmallBanners from "../../SmallBanners/SmallBanners";
+import ThreeBanners from "../../SmallBanners/ThreeBanners/ThreeBanners";
 const Home = () => {
   return (
     <>
@@ -13,6 +14,7 @@ const Home = () => {
       <Banner />
       <NewArrival />
       <SmallBanners />
+      <ThreeBanners />
     </>
   );
 };
