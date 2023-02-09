@@ -3,6 +3,7 @@ import classes from './Button.module.css'
 const BUTTON_STYLES_CLASSES = {
     normal: "button",
     inverted: "inverted",
+    newsletter: 'newsletter'
   };
   
 

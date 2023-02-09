@@ -5,6 +5,7 @@ import Banner from "../../Banner/Banner";
 import NewArrival from "../../NewArrival/NewArrival";
 import SmallBanners from "../../SmallBanners/SmallBanners";
 import ThreeBanners from "../../SmallBanners/ThreeBanners/ThreeBanners";
+import NewsLetter from "../../NewsLetter/NewsLetter";
 const Home = () => {
   return (
     <>
@@ -15,6 +16,7 @@ const Home = () => {
       <NewArrival />
       <SmallBanners />
       <ThreeBanners />
+      <NewsLetter />
     </>
   );
 };

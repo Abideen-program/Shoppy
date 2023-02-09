@@ -1,26 +1,36 @@
-.button, .inverted {
-    font-size: 1.4rem;
-    font-weight: 600;
-    padding: 1.5rem 3rem;
-    background-color: #fff;
-    color: #000;
-    border: none;
-    outline: none;
-    border-radius: 0.4rem;
-    cursor: pointer;
-    transition: 0.2s ease;
+.button,
+.inverted,
+.newsletter {
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 1.5rem 3rem;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: 0.2s ease;
 }
 
-.inverted{
-    font-size: 1.3rem;
-    padding: 1.1rem 1.5rem;
-    color: #fff;
-    background: transparent;
-    border: 1px solid #fff;
-    border-radius: 0;
+.inverted {
+  font-size: 1.3rem;
+  padding: 1.1rem 1.5rem;
+  color: #fff;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 0;
 }
 
-.button:hover{
-    background: #088178;
-    color: #fff;
+.newsletter {
+  background: #088178;
+  color: #fff;
+  white-space: nowrap;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.button:hover {
+  background: #088178;
+  color: #fff;
 }
