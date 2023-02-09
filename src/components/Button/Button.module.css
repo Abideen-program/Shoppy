@@ -30,6 +30,10 @@
   border-bottom-left-radius: 0;
 }
 
+.newsletter:disabled{
+  cursor: not-allowed;
+}
+
 .button:hover {
   background: #088178;
   color: #fff;
