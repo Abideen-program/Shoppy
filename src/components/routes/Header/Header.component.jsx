@@ -1,37 +1,81 @@
 import { Outlet, Link } from "react-router-dom";
+import { useState } from "react";
 import CartIcon from "../../Cart/CartIcon.component";
-import clasess from "./Header.module.css";
+import classes from "./Header.module.css";
 
 const Header = () => {
+  const [showNavLinks, setShowNavLinks] = useState(false);
+
+  const showNav = () => {
+    setShowNavLinks(true);
+  };
+
+  const hideNav = () => {
+    setShowNavLinks(false);
+  };
+
   return (
     <>
-      <section className={clasess.navBar}>
+      <section className={classes.navBar}>
         <div>
-          <Link className={clasess.logo} to="/">
+          <Link className={classes.logo} to="/">
             SHOPPY
           </Link>
         </div>
-
-        <ul className={clasess.navLinkContainer}>
-          <li className={clasess.links}>
+        {/* START OF WEB NAVLINKS */}
+        <ul className={classes.desktop}>
+          <li className={classes.links}>
             <Link to="/">Home</Link>
           </li>
-          <li className={clasess.links}>
+          <li className={classes.links}>
             <Link to="shop">Shop</Link>
           </li>
-          <li className={clasess.links}>
+          <li className={classes.links}>
             <Link to="blog">Blog</Link>
           </li>
-          <li className={clasess.links}>
+          <li className={classes.links}>
             <Link to="about">About</Link>
           </li>
-          <li className={clasess.links}>
+          <li className={classes.links}>
             <Link to="contact">Contact</Link>
           </li>
-          <li className={clasess.links}>
-            <CartIcon/>
+          <li className={classes.cart}>
+            <CartIcon />
           </li>
         </ul>
+        {/* END OF WEB NAVLINKS */}
+
+        {/* START OF MOBILE NAVLINKS */}
+        {showNavLinks && (
+          <ul className={classes.navLinkContainer}>
+            <li className={classes.links}>
+              <Link to="/">Home</Link>
+            </li>
+            <li className={classes.links}>
+              <Link to="shop">Shop</Link>
+            </li>
+            <li className={classes.links}>
+              <Link to="blog">Blog</Link>
+            </li>
+            <li className={classes.links}>
+              <Link to="about">About</Link>
+            </li>
+            <li className={classes.links}>
+              <Link to="contact">Contact</Link>
+            </li>
+            <li className={classes.cart}>
+              <CartIcon />
+            </li>
+            <div className={classes.close}>
+              <i className="fa fa-times" onClick={hideNav}></i>
+            </div>
+          </ul>
+        )}
+        {/* END OF MOBILE NAVLINKS */}
+
+        <div className={classes.hambugger}>
+          <i className="fa fa-outdent" onClick={showNav}></i>
+        </div>
       </section>
       <Outlet />
     </>
