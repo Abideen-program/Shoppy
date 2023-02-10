@@ -36,3 +36,7 @@
   padding: 0;
   display: inline-block;
 }
+
+.icon a:hover {
+  color: #088178;
+}

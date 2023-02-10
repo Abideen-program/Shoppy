@@ -5,3 +5,10 @@
   align-items: center;
   flex-wrap: wrap;
 }
+
+.copyright{
+  font-size: 1.4rem;
+  width: 100%;
+  text-align: center;
+  color: #4b5652;
+}

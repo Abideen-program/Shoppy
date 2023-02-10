@@ -11,6 +11,9 @@ const Footer = () => {
       <About />
       <Account />
       <InstallApp />
+      <div className={classes.copyright}>
+        <p>&copy;2023, Abideen Olafimihan React E-commerce Template</p>
+      </div>
     </div>
   );
 };

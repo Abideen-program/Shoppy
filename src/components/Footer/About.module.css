@@ -18,3 +18,8 @@
     padding: 0;
     margin-bottom: 1rem;
 }
+
+.col a:hover {
+    color: #088178;
+  }
+  
