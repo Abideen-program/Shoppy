@@ -48,22 +48,22 @@ const Header = () => {
         {/* START OF MOBILE NAVLINKS */}
         {showNavLinks && (
           <ul className={classes.navLinkContainer}>
-            <li className={classes.links}>
+            <li className={classes.links} onClick={hideNav}>
               <Link to="/">Home</Link>
             </li>
-            <li className={classes.links}>
+            <li className={classes.links} onClick={hideNav}>
               <Link to="shop">Shop</Link>
             </li>
-            <li className={classes.links}>
+            <li className={classes.links} onClick={hideNav}>
               <Link to="blog">Blog</Link>
             </li>
-            <li className={classes.links}>
+            <li className={classes.links} onClick={hideNav}>
               <Link to="about">About</Link>
             </li>
-            <li className={classes.links}>
+            <li className={classes.links} onClick={hideNav}>
               <Link to="contact">Contact</Link>
             </li>
-            <li className={classes.cart}>
+            <li className={classes.cart} onClick={hideNav}>
               <CartIcon />
             </li>
             <div className={classes.close}>

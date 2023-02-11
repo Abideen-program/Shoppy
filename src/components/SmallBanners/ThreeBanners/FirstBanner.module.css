@@ -24,3 +24,19 @@
   font-weight: 800;
   color: #ec544e;
 }
+
+@media (max-width: 800px) {
+  .banner{
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 477px) {
+  .banner{
+    height: 20vh;
+  }
+
+  .banner h2 {
+    font-size: 2rem;
+  }
+}

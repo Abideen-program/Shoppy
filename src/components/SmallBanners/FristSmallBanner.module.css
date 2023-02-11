@@ -8,7 +8,7 @@
   background-size: cover;
   background-position: center center;
   min-width: 54rem;
-  height: 50vh;
+  height: 40vh;
   margin-bottom: 4rem;
 }
 
@@ -35,4 +35,42 @@
 .banner:hover button {
   background: #088178;
   border: 1px solid #088178;
+}
+
+/* @media (max-width: 1440px) {
+  .banner {
+    min-width: 60rem;
+  }
+} */
+
+@media (max-width: 800px) {
+  .banner {
+    min-width: 100%;
+    height: 30vh;
+    margin-bottom: 4rem;
+  }
+}
+
+@media (max-width: 477px) {
+  .banner {
+    height: 20vh;
+  }
+
+  .banner h2 {
+    font-size: 2rem;
+  }
+
+  .banner h4 {
+    font-size: 1.6rem;
+  }
+
+  .banner p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .banner {
+    height: 30vh;
+  }
 }

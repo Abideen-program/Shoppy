@@ -5,3 +5,9 @@
     align-items: center;
     flex-wrap: wrap;
 }
+
+@media (max-width: 477px) {
+    .banners{
+        padding: 0 4rem;
+    }
+}

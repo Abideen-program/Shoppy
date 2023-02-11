@@ -40,3 +40,9 @@
 .icon a:hover {
   color: #088178;
 }
+
+@media (max-width: 477px) {
+  .icon a {
+    font-size: 2rem;
+  }
+}

@@ -45,3 +45,17 @@
 .box:nth-child(6) h6 {
   background: #fff2e5;
 }
+
+@media (max-width: 477px) {
+  .box {
+    margin:0 0 1.5rem 0;
+    width: 15rem;
+  }
+  
+}
+
+@media (max-width: 380px) {
+  .box {
+    width: 14rem;
+  }
+}

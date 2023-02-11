@@ -105,11 +105,17 @@ a {
   }
 
   a {
-    font-size: 3rem;
+    font-size: 2.2rem;
   }
 
   .hambugger,
   .close {
     display: block;
   }
+}
+
+@media (max-width: 477px) {
+  .navBar {
+    padding: 1rem 3rem;
+  } 
 }

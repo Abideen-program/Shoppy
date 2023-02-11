@@ -12,3 +12,13 @@
   text-align: center;
   color: #4b5652;
 }
+
+@media (max-width: 477px) {
+  .footer{
+    padding: 2rem 4rem;
+  }
+
+  .copyright{
+    font-size: 1.1rem;
+  }
+}
