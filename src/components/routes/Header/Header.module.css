@@ -118,4 +118,8 @@ a {
   .navBar {
     padding: 1rem 3rem;
   } 
+
+  .navLinkContainer{
+    width: 20rem;
+  }
 }

@@ -1,24 +1,23 @@
 .newArrival {
-    text-align: center;
-    padding: 4rem 8rem;
-  }
-  
-  .newArrival .proContainer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  
-  .newArrival h2 {
-      font-size: 4.6rem;
-      color: #222;
-      line-height: 5.4rem;
-  }
-  
-  .newArrival p {
-      font-size: 1.6rem;
-      margin: 1rem 0;
-      font-weight: lighter;
-  }
-  
+  text-align: center;
+  padding: 4rem 8rem;
+}
+
+.newArrival .proContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.newArrival h2 {
+  font-size: 4.6rem;
+  color: #222;
+  line-height: 5.4rem;
+}
+
+.newArrival p {
+  font-size: 1.6rem;
+  margin: 1rem 0;
+  font-weight: lighter;
+}
