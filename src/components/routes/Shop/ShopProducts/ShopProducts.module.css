@@ -16,8 +16,28 @@
 }
 
 .products .proContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 800px) {
+    .products .proContainer {
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 477px) {
+    .products h2 {
+      font-size: 3rem;
+      color: #222;
+      line-height: 5.4rem;
+    }
+  }
+  
+  @media (max-width: 477px) {
+    .products {
+      padding: 2rem 4rem;
+    }
   }
