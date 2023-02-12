@@ -1,7 +1,17 @@
-const Shop = () => {
-    return (
-        <h1>This is the shop</h1>
-    )
-}
+import Footer from "../../Footer/Footer";
+import NewsLetter from "../../NewsLetter/NewsLetter";
+import ShopBanner from "./ShopBanner/ShopBanner";
+import ShopProducts from "./ShopProducts/ShopProducts";
 
-export default Shop
+const Shop = () => {
+  return (
+    <>
+      <ShopBanner />
+      <ShopProducts />
+      <NewsLetter />
+      <Footer />
+    </>
+  );
+};
+
+export default Shop;

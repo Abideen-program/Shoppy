@@ -46,11 +46,13 @@ a {
   padding: 0 1.25rem;
 }
 
-.navLinkContainer .links a:hover {
+.navLinkContainer .links a:hover,
+.desktop .links a:hover {
   color: #088178;
 }
 
-.navLinkContainer .links a:hover::after {
+.navLinkContainer .links a:hover::after,
+.desktop .links a:hover::after {
   content: "";
   background: #088178;
   width: 40%;
