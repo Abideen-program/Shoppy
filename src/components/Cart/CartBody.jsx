@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import { Link } from "react-router-dom";
 import { CartContext } from "./CartContext";
 import Modal from "./Modal/Modal";
 import CartItem from "./CartItem";
@@ -34,7 +35,9 @@ const CartBody = () => {
         <button className={classes["button--alt"]} onClick={showCartHandler}>
           Close
         </button>
-        <button className={classes.button}>Check-out</button>
+        <button className={classes.button} onClick={showCartHandler}>
+          <Link to='checkout'>Check-out</Link>
+        </button>
       </div>
     </Modal>
   );

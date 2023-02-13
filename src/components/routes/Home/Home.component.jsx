@@ -7,6 +7,7 @@ import SmallBanners from "../../SmallBanners/SmallBanners";
 import ThreeBanners from "../../SmallBanners/ThreeBanners/ThreeBanners";
 import NewsLetter from "../../NewsLetter/NewsLetter";
 import Footer from "../../Footer/Footer";
+// import Checkout from "../Checkout/Checkout";
 const Home = () => {
   return (
     <>
@@ -19,6 +20,7 @@ const Home = () => {
       <ThreeBanners />
       <NewsLetter />
       <Footer />
+      {/* <Checkout /> */}
     </>
   );
 };

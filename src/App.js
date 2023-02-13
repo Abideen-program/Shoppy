@@ -6,6 +6,7 @@ import Blog from "./components/routes/Blog/Blog.component";
 import About from "./components/routes/About/About.component";
 import Contact from "./components/routes/Contact/Contact.component";
 import CartBody from "./components/Cart/CartBody";
+import Checkout from "./components/routes/Checkout/Checkout";
 import { useContext } from "react";
 import { CartContext } from "./components/Cart/CartContext";
 
@@ -25,6 +26,7 @@ const App = () => {
           <Route path="blog" element={<Blog />} />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="checkout" element={<Checkout />} />
         </Route>
       </Routes>
     </>
