@@ -1,7 +1,16 @@
+import { useContext } from "react";
+import { CartContext } from "../Cart/CartContext";
 import classes from "./FeaturedProduct.module.css";
 
 const FeatureProduct = (props) => {
   const { imageURL, name, brand, price } = props.product;
+  //to add the item by clicking the basket icon on the product page
+  const {addItemToCart} = useContext(CartContext)
+
+  const addItemHandler = () => {
+    addItemToCart(props.product)
+  }
+
   return (
     <div className={classes.product}>
       <img src={imageURL} alt="images" />
@@ -15,7 +24,7 @@ const FeatureProduct = (props) => {
         </div>
         <h4>${price}</h4>
       </div>
-      <i className="fa fa-shopping-basket"></i>
+      <i className="fa fa-shopping-basket" onClick={addItemHandler}></i>
     </div>
   );
 };

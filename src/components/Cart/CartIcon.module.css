@@ -1,23 +1,45 @@
-.cartIconContainer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 25px;
-    height: 25px;
-    position: relative;
-    cursor: pointer;
+.cartIconContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  cursor: pointer;
 }
 
 .cartIcon {
-    width: 24px;
-    height: 24px;
+  width: 24px;
+  height: 24px;
 }
 
-.itemCount{
-    position: absolute;
-    font-size: 1.2rem;
-    font-weight: bold;
-    bottom: 0.05rem;
+.itemCount {
+  position: absolute;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #088178;
+  bottom: 0.05rem;
 }
 
+.bump {
+  animation: bump 300ms ease-out;
+}
+
+@keyframes bump {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(0.9);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
