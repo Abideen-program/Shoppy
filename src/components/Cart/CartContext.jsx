@@ -1,4 +1,5 @@
 import { createContext, useEffect, useState } from "react";
+import Loader from "../Loader/Loader";
 
 //help function to be called to add item to the cart
 const addToCart = (cartItems, productToAdd) => {
@@ -60,7 +61,7 @@ export const CartContext = createContext({
   showBasket: true,
   setShowBasket: () => {},
   timer: () => {},
-  response: "Processing",
+  response: <Loader/>,
   setResponse: () => {},
   showResponse: false,
   setShowResponse: () => {},
@@ -78,7 +79,7 @@ export const CartProvider = ({ children }) => {
   //this handles the total amount of items in the cart
   const [cartTotal, setCartTotal] = useState(0);
   //this stores the message to be displayed when payment was made
-  const [response, setResponse] = useState("Processing");
+  const [response, setResponse] = useState(<Loader />);
   //this handles the display of message when payment was made
   const [showResponse, setShowResponse] = useState(false);
 

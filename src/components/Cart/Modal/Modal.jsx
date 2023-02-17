@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { CartContext } from "../CartContext";
+import Loader from "../../Loader/Loader";
 import ReactDOM from "react-dom";
 import classes from "./Modal.module.css";
 
@@ -8,7 +9,7 @@ const BackDrop = (props) => {
   const {closeModal} = props
   const closeModalHandler = () => {
     setShowResponse(false)
-    setResponse('Processing')
+    setResponse(<Loader />)
     closeModal()
   }
   return <div className={classes.backdrop} onClick={closeModalHandler}></div>;
