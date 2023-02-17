@@ -35,10 +35,27 @@
   margin-top: 30px;
 }
 
+.pay {
+  font-weight: bold;
+  color: #088178;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #088178;
+  padding: 0.5rem 2rem;
+  border-radius: 25px;
+  margin-left: auto;
+  margin-top: 1rem;
+}
+
+.pay:hover{
+  background-color: #088178;
+  color: #fff;
+}
+
 @media (max-width: 800px) {
   .checkout-container {
     width: 90%;
-  } 
+  }
 }
 
 @media (max-width: 477px) {
@@ -46,7 +63,7 @@
     font-size: 1rem;
   }
 
-  .total{
+  .total {
     font-size: 2rem;
   }
 }

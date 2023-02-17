@@ -1,9 +1,17 @@
-import classes from "./Modal.module.css";
+import { useContext } from "react";
+import { CartContext } from "../CartContext";
 import ReactDOM from "react-dom";
+import classes from "./Modal.module.css";
 
 const BackDrop = (props) => {
+  const {setShowResponse, setResponse} = useContext(CartContext)
   const {closeModal} = props
-  return <div className={classes.backdrop} onClick={closeModal}></div>;
+  const closeModalHandler = () => {
+    setShowResponse(false)
+    setResponse('Processing')
+    closeModal()
+  }
+  return <div className={classes.backdrop} onClick={closeModalHandler}></div>;
 };
 
 const ModalOverlay = (props) => {

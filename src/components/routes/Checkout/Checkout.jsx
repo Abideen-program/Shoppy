@@ -6,7 +6,12 @@ import classes from "./Checkout.module.css";
 import CheckoutItem from "./CheckoutItem";
 
 const Checkout = () => {
-  const { cartItems, cartTotal } = useContext(CartContext);
+  const { cartItems, cartTotal, timer, setShowResponse } = useContext(CartContext);
+
+  const paymentResponse = () => {
+    setShowResponse(true)
+    timer()
+  }
   return (
     <>
       <div className={classes["checkout-container"]}>
@@ -35,6 +40,7 @@ const Checkout = () => {
           return <CheckoutItem key={cartItem.id} cartItem={cartItem} />;
         })}
         <span className={classes.total}>Total: ${cartTotal}</span>
+        <button className={classes.pay} onClick={paymentResponse}>Make Payment</button>
       </div>
       <NewsLetter />
       <Footer />

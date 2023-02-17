@@ -9,16 +9,18 @@ import CartBody from "./components/Cart/CartBody";
 import Checkout from "./components/routes/Checkout/Checkout";
 import { useContext } from "react";
 import { CartContext } from "./components/Cart/CartContext";
+import Payment from "./components/routes/Checkout/Payment/Payment";
 
 const App = () => {
   //to hide and show the cart the cart
   // const [isShown, setIsShown] = useState(false);
 
- const {cartShown} = useContext(CartContext)
+  const { cartShown, showResponse } = useContext(CartContext);
 
   return (
     <>
       {cartShown && <CartBody />}
+      {showResponse && <Payment />}
       <Routes>
         <Route path="/" element={<Header />}>
           <Route index element={<Home />} />

@@ -6,10 +6,12 @@
   box-shadow: 2rem 2rem 3.4rem rgba(0, 0, 0, 0.03);
   border: 1px solid #cce7d0;
   border-radius: 4px;
+  transition: transform 1s ease;
 }
 
 .box:hover {
   box-shadow: 1rem 1rem 5.4rem rgba(70, 62, 221, 0.1);
+  transform: translateY(-1rem);
 }
 
 .box img{

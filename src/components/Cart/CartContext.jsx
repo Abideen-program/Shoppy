@@ -57,14 +57,32 @@ export const CartContext = createContext({
   removeItemFromCart: () => {},
   deleteItemFromCart: () => {},
   clearCart: () => {},
+  showBasket: true,
+  setShowBasket: () => {},
+  timer: () => {},
+  response: "Processing",
+  setResponse: () => {},
+  showResponse: false,
+  setShowResponse: () => {},
 });
 
 export const CartProvider = ({ children }) => {
+  //to show the cartbody
   const [cartShown, setCartShown] = useState(false);
+  //to handle the display of nasket on each products
+  const [showBasket, setShowBasket] = useState(true);
+  //this handle the cartItems
   const [cartItems, setCartItems] = useState([]);
+  //this handles the cart count
   const [cartCount, setCartCount] = useState(0);
+  //this handles the total amount of items in the cart
   const [cartTotal, setCartTotal] = useState(0);
+  //this stores the message to be displayed when payment was made
+  const [response, setResponse] = useState("Processing");
+  //this handles the display of message when payment was made
+  const [showResponse, setShowResponse] = useState(false);
 
+  //add and increase the quantity of items inside the cart
   const addItemToCart = (productToAdd) => {
     setCartItems((cartItems) => {
       const newCartItems = addToCart(cartItems, productToAdd);
@@ -72,6 +90,7 @@ export const CartProvider = ({ children }) => {
     });
   };
 
+  //reduce the quantity of items inside the cart
   const removeItemFromCart = (productToRemove) => {
     setCartItems(() => {
       const newCartItems = removeFromCart(cartItems, productToRemove);
@@ -79,6 +98,7 @@ export const CartProvider = ({ children }) => {
     });
   };
 
+  //delete an item from the cart
   const deleteItemFromCart = (productToDelete) => {
     setCartItems((cartItems) => {
       const newCartItems = deleteItem(cartItems, productToDelete);
@@ -86,6 +106,19 @@ export const CartProvider = ({ children }) => {
     });
   };
 
+  //reseting the success message when payment was made
+  const timer = () => {
+    setTimeout(() => {
+      if(cartItems.length === 0) {
+        setResponse('Cart is empty')
+      } else{
+
+        setResponse("Order successfully placed");
+      }
+    }, 10000);
+  };
+
+  //calculating the number of quantity in the cart
   useEffect(() => {
     const count = cartItems.reduce((total, item) => {
       return total + item.quantity;
@@ -93,6 +126,7 @@ export const CartProvider = ({ children }) => {
     setCartCount(count);
   }, [cartItems]);
 
+  //calculating the total amount of quantity in the cart
   useEffect(() => {
     const total = cartItems.reduce((total, item) => {
       return total + item.quantity * item.price;
@@ -102,6 +136,8 @@ export const CartProvider = ({ children }) => {
 
   const value = {
     cartShown,
+    showBasket,
+    setShowBasket,
     cartItems,
     cartCount,
     cartTotal,
@@ -109,6 +145,11 @@ export const CartProvider = ({ children }) => {
     addItemToCart,
     removeItemFromCart,
     deleteItemFromCart,
+    timer,
+    response,
+    setResponse,
+    showResponse,
+    setShowResponse,
     // clearCart,
   };
 
