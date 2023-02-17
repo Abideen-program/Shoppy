@@ -107,14 +107,22 @@ export const CartProvider = ({ children }) => {
     });
   };
 
+  //clearing cart items when payment has been made
+  const clearCart = () => {
+    setCartItems((cartItems) => {
+      const newCartItems = []
+      return newCartItems;
+    })
+  }
+
   //reseting the success message when payment was made
   const timer = () => {
     setTimeout(() => {
       if(cartItems.length === 0) {
-        setResponse('Cart is empty')
+        setResponse('Cart is empty 🤞🤞')
       } else{
 
-        setResponse("Order successfully placed");
+        setResponse("Order successfully placed 💖💖");
       }
     }, 10000);
   };
@@ -151,7 +159,7 @@ export const CartProvider = ({ children }) => {
     setResponse,
     showResponse,
     setShowResponse,
-    // clearCart,
+    clearCart,
   };
 
   return <CartContext.Provider value={value}>{children}</CartContext.Provider>;

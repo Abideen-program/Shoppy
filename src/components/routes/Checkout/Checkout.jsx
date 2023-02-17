@@ -6,11 +6,16 @@ import classes from "./Checkout.module.css";
 import CheckoutItem from "./CheckoutItem";
 
 const Checkout = () => {
-  const { cartItems, cartTotal, timer, setShowResponse } = useContext(CartContext);
+  const { cartItems, cartTotal, timer, setShowResponse, clearCart } = useContext(CartContext);
 
+  //this will fire when payment button is clicked
   const paymentResponse = () => {
+    //this will show the modal of the payment
     setShowResponse(true)
+    //this handles the changing of the payment modal contents
     timer()
+    //this will clear the cart when payment is made
+    clearCart()
   }
   return (
     <>
