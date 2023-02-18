@@ -50,14 +50,12 @@
 
 import UseProducts from "../useProducts/UseProducts";
 
-const FeaturedProducts = () => {
-  const newArrivals = () => {
-    return [
-      "Featured Products",
-      "https://shoppy-baa30-default-rtdb.firebaseio.com/featuredProducts.json",
-    ];
-  };
+const newArrivals = [
+  "Featured Products",
+  "https://shoppy-baa30-default-rtdb.firebaseio.com/featuredProducts.json",
+];
 
+const FeaturedProducts = () => {
   return <UseProducts onNew={newArrivals} />;
 };
 

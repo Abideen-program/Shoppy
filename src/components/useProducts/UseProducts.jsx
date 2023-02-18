@@ -5,7 +5,7 @@ import classes from "./UseProducts.module.css";
 const UseProducts = (props) => {
   //props from FeaturedProducts and NewArrival
   const { onNew } = props;
-  const [title, url] = onNew();
+  const [title, url] = onNew;
   const [products, setProducts] = useState([]);
 
   const fetchFeaturedProducts = useCallback(async () => {

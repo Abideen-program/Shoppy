@@ -1,10 +1,11 @@
 import { Outlet, Link } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import CartIcon from "../../Cart/CartIcon.component";
 import classes from "./Header.module.css";
 
 const Header = () => {
   const [showNavLinks, setShowNavLinks] = useState(false);
+  const [shadow, setShadow] = useState(false);
 
   const showNav = () => {
     setShowNavLinks(true);
@@ -14,9 +15,25 @@ const Header = () => {
     setShowNavLinks(false);
   };
 
+  useEffect(() => {
+    const addShadow = () => {
+      if (window.scrollY >= 800) {
+        setShadow(true);
+      } else {
+        setShadow(false);
+      }
+    };
+    window.addEventListener("scroll", addShadow);
+    return () => {
+      window.removeEventListener("scroll", addShadow);
+    };
+  }, []);
+
   return (
     <>
-      <section className={classes.navBar}>
+      <section
+        className={`${classes.navBar} ${shadow ? classes["shadow"] : ""}`}
+      >
         <div>
           <Link className={classes.logo} to="/">
             SHOPPY
