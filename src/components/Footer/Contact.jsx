@@ -1,3 +1,4 @@
+import {Link} from 'react-router-dom'
 import classes from "./Contact.module.css";
 
 const Contact = () => {
@@ -17,11 +18,11 @@ const Contact = () => {
       <div className={classes.follow}>
         <h4>Follow us</h4>
         <div className={classes.icon}>
-          <a href="#" className="fab fa-facebook-f"></a>
-          <a href="#" className="fab fa-twitter"></a>
-          <a href="#" className="fab fa-instagram"></a>
-          <a href="#" className="fab fa-pinterest-p"></a>
-          <a href="#" className="fab fa-youtube"></a>
+          <Link to='home' href="#" className="fab fa-facebook-f"></Link>
+          <Link to='home' href="#" className="fab fa-twitter"></Link>
+          <Link to='home' href="#" className="fab fa-instagram"></Link>
+          <Link to='home' href="#" className="fab fa-pinterest-p"></Link>
+          <Link to='home' href="#" className="fab fa-youtube"></Link>
         </div>
       </div>
     </div>
