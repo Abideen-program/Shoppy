@@ -13,7 +13,7 @@ const FeatureProduct = (props) => {
   //to add the item by clicking the basket icon on the product page
   const { addItemToCart, cartItems } = useContext(CartContext);
 
-  console.log(cartItems)
+  console.log(cartItems);
 
   const addItemHandler = () => {
     addItemToCart(props.product);

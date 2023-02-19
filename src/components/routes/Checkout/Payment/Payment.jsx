@@ -1,12 +1,22 @@
 import { useContext } from "react";
-import classes from './Payment.module.css'
 import { CartContext } from "../../../Cart/CartContext";
 import Modal from "../../../Cart/Modal/Modal";
+import Button from "../../../Button/Button";
+import Loader from "../../../Loader/Loader";
+import classes from "./Payment.module.css";
 const Payment = () => {
-  const { response } = useContext(CartContext);
+  const { response, setShowResponse, setResponse } = useContext(CartContext);
+
+  const closeModal = () => {
+    setShowResponse(false);
+    setResponse(<Loader />);
+  };
   let feedBack = (
-    <div className={classes['payment-container']}>
+    <div className={classes["payment-container"]}>
       <h4>{response}</h4>
+      <Button buttonType="close" onClick={closeModal}>
+        Close
+      </Button>
     </div>
   );
 

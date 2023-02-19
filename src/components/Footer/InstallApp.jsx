@@ -1,7 +1,7 @@
 import classes from "./InstallApp.module.css";
-import appleStore from '../../assets/images/pay/app.jpg'
-import googleStore from '../../assets/images/pay/play.jpg'
-import paymentGate from '../../assets/images/pay/pay.png'
+import appleStore from "../../assets/images/pay/app.jpg";
+import googleStore from "../../assets/images/pay/play.jpg";
+import paymentGate from "../../assets/images/pay/pay.png";
 
 const InstallApp = () => {
   return (

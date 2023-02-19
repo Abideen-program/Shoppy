@@ -20,7 +20,6 @@ const Home = () => {
       <ThreeBanners />
       <NewsLetter />
       <Footer />
-      {/* <Checkout /> */}
     </>
   );
 };

@@ -7,7 +7,7 @@
   cursor: pointer;
   box-shadow: 2rem 2rem 3rem rgba(0, 0, 0, 0.02);
   margin: 1.5rem 0;
-  transition:transform 1s ease;
+  transition: transform 1s ease;
   position: relative;
 }
 
@@ -47,7 +47,7 @@
   color: #088178;
 }
 
-.product > i  {
+.product > i {
   background: #e8f6ea;
   width: 4rem;
   height: 4rem;

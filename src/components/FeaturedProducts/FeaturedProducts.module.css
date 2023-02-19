@@ -3,7 +3,7 @@
   padding: 4rem 8rem;
 }
 
-.products .proContainer{
+.products .proContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11,19 +11,19 @@
 }
 
 .products h2 {
-    font-size: 4.6rem;
-    color: #222;
-    line-height: 5.4rem;
+  font-size: 4.6rem;
+  color: #222;
+  line-height: 5.4rem;
 }
 
 .products p {
-    font-size: 1.6rem;
-    margin: 1rem 0;
-    font-weight: lighter;
+  font-size: 1.6rem;
+  margin: 1rem 0;
+  font-weight: lighter;
 }
 
 @media (max-width: 800px) {
-  .products .proContainer{
+  .products .proContainer {
     justify-content: center;
   }
 }

@@ -12,25 +12,24 @@
   color: #222;
 }
 
-.col img{
-    margin: 1.5rem 0;
+.col img {
+  margin: 1.5rem 0;
 }
 
-.store img{
-    border: 1px solid #088178;
-    border-radius: 6px;
-    margin-right: 5px;
+.store img {
+  border: 1px solid #088178;
+  border-radius: 6px;
+  margin-right: 5px;
 }
 
 .store img:nth-child(2) {
-    border: 1px solid goldenrod;
-    margin-right: 0;
+  border: 1px solid goldenrod;
+  margin-right: 0;
 }
 
-.col p{
-    color: #4b5652;
+.col p {
+  color: #4b5652;
 }
-
 
 /*
 .col a {

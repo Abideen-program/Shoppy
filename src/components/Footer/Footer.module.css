@@ -6,7 +6,7 @@
   flex-wrap: wrap;
 }
 
-.copyright{
+.copyright {
   font-size: 1.4rem;
   width: 100%;
   text-align: center;
@@ -14,11 +14,11 @@
 }
 
 @media (max-width: 477px) {
-  .footer{
+  .footer {
     padding: 2rem 4rem;
   }
 
-  .copyright{
+  .copyright {
     font-size: 1.1rem;
   }
 }

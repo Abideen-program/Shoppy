@@ -42,12 +42,11 @@
     line-height: 3.4rem;
     margin: 1rem 0;
   }
-  
+
   .banner h4 {
     font-size: 1.6rem;
     color: #fff;
   }
-  
 }
 
 @media (max-width: 380px) {

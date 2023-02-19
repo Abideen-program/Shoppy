@@ -61,7 +61,7 @@ export const CartContext = createContext({
   showBasket: true,
   setShowBasket: () => {},
   timer: () => {},
-  response: <Loader/>,
+  response: <Loader />,
   setResponse: () => {},
   showResponse: false,
   setShowResponse: () => {},
@@ -110,18 +110,17 @@ export const CartProvider = ({ children }) => {
   //clearing cart items when payment has been made
   const clearCart = () => {
     setCartItems((cartItems) => {
-      const newCartItems = []
+      const newCartItems = [];
       return newCartItems;
-    })
-  }
+    });
+  };
 
   //reseting the success message when payment was made
   const timer = () => {
     setTimeout(() => {
-      if(cartItems.length === 0) {
-        setResponse('Cart is empty 🤞🤞')
-      } else{
-
+      if (cartItems.length === 0) {
+        setResponse("Cart is empty 🤞🤞");
+      } else {
         setResponse("Order successfully placed 💖💖");
       }
     }, 10000);

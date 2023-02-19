@@ -43,7 +43,6 @@
   }
 } */
 
-
 @media (max-width: 800px) {
   .banner {
     min-width: 100%;
@@ -53,7 +52,7 @@
 }
 
 @media (max-width: 477px) {
-  .banner{
+  .banner {
     height: 20vh;
   }
 

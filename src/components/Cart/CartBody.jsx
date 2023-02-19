@@ -4,6 +4,7 @@ import { CartContext } from "./CartContext";
 import Modal from "./Modal/Modal";
 import CartItem from "./CartItem";
 import classes from "./CartBody.module.css";
+import Button from "../Button/Button";
 const CartBody = () => {
   const { setCartShown, cartItems, cartTotal } = useContext(CartContext);
   //to hide the cart body
@@ -32,12 +33,11 @@ const CartBody = () => {
         <span>${cartTotal}</span>
       </div>
       <div className={classes.actions}>
-        <button className={classes["button--alt"]} onClick={showCartHandler}>
-          Close
-        </button>
-        <button className={classes.button} onClick={showCartHandler}>
-          <Link to='checkout'>Check-out</Link>
-        </button>
+        <Button buttonType="close">Close</Button>
+
+        <Button buttonType="cart" onClick={showCartHandler}>
+          <Link to="checkout">Check-out</Link>
+        </Button>
       </div>
     </Modal>
   );

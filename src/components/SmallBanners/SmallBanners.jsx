@@ -5,8 +5,8 @@ import classes from "./SmallBanners.module.css";
 const SmallBanners = () => {
   return (
     <div className={classes.banners}>
-        <FirstSmallBanner />
-        <SecondSmallBanner />
+      <FirstSmallBanner />
+      <SecondSmallBanner />
     </div>
   );
 };

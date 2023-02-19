@@ -2,24 +2,24 @@ import { useContext } from "react";
 import { CartContext } from "../../Cart/CartContext";
 import classes from "./CheckoutItem.module.css";
 
-const CheckoutItem = ({cartItem}) => {
+const CheckoutItem = ({ cartItem }) => {
   const { imageURL, name, quantity, price } = cartItem;
 
   const { addItemToCart, deleteItemFromCart, removeItemFromCart } =
     useContext(CartContext);
 
-    //increasing item quantity in checkout page
-    const increaseQuantity = () => addItemToCart(cartItem)
+  //increasing item quantity in checkout page
+  const increaseQuantity = () => addItemToCart(cartItem);
 
-    //reducing item quantity in checkoutPage
-    const decreaseQuantity = () => removeItemFromCart(cartItem)
+  //reducing item quantity in checkoutPage
+  const decreaseQuantity = () => removeItemFromCart(cartItem);
 
-    //delete item from 
-    const deleteCartItem = () => deleteItemFromCart(cartItem)
+  //delete item from
+  const deleteCartItem = () => deleteItemFromCart(cartItem);
 
   return (
     <div className={classes["checkout-item-container"]}>
-      <div className={classes['image-container']}>
+      <div className={classes["image-container"]}>
         <img src={imageURL} alt={`${name}`} />
       </div>
 

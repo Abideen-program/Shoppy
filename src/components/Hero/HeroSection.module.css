@@ -56,17 +56,16 @@
 }
 
 @media (max-width: 477px) {
-    .hero {
-      background-position: 55%;
-      padding: 2.5rem;
-    }
-
-    .hero h1{
-        font-size: 3.8rem;
-    }
-
-    .hero h2{
-        font-size: 3.2rem;
-    }
+  .hero {
+    background-position: 55%;
+    padding: 2.5rem;
   }
-  
+
+  .hero h1 {
+    font-size: 3.8rem;
+  }
+
+  .hero h2 {
+    font-size: 3.2rem;
+  }
+}

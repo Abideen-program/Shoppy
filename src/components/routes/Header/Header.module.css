@@ -20,7 +20,7 @@
   transition: box-shadow 0.5s ease;
 }
 
-.shadow{
+.shadow {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
 }
 
@@ -127,9 +127,9 @@ a {
 
   .navBar {
     padding: 1rem 2.5rem;
-  } 
+  }
 
-  .navLinkContainer{
+  .navLinkContainer {
     width: 20rem;
   }
 }

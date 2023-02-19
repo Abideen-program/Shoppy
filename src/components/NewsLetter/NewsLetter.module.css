@@ -51,14 +51,14 @@
 }
 
 @media (max-width: 800px) {
-  .newsLetter{
+  .newsLetter {
     display: block;
     text-align: center;
   }
 }
 
 @media (max-width: 477px) {
-  .newsLetter{
+  .newsLetter {
     padding: 4rem;
   }
 

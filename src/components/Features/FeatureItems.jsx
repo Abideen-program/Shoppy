@@ -1,4 +1,4 @@
-import classes from './FeatureItems.module.css'
+import classes from "./FeatureItems.module.css";
 const FeatureItems = (props) => {
   const { imageUrl, label } = props.feature;
   return (

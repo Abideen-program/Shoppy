@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import FeatureItems from "./FeatureItems";
-import classes from './Features.module.css'
+import classes from "./Features.module.css";
 
 const Features = () => {
   const [features, setFeatures] = useState([]);
@@ -19,10 +19,10 @@ const Features = () => {
         id: key,
         imageUrl: data[key].imageUrl,
         label: data[key].label,
-        style: data[key].class
+        style: data[key].class,
       });
     }
-    
+
     setFeatures(loadedFeatures);
   };
 
