@@ -58,6 +58,7 @@
 
 @media (max-width: 380px) {
   .box {
-    width: 14rem;
+    width: 13.5rem;
+    margin-right: 0.1rem;
   }
 }
