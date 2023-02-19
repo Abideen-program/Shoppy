@@ -33,7 +33,7 @@ const CartBody = () => {
         <span>${cartTotal}</span>
       </div>
       <div className={classes.actions}>
-        <Button buttonType="close">Close</Button>
+        <Button buttonType="close" onClick={showCartHandler}>Close</Button>
 
         <Button buttonType="cart" onClick={showCartHandler}>
           <Link to="checkout">Check-out</Link>
