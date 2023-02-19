@@ -42,9 +42,12 @@
   padding: 1.4rem 8rem 1.4rem 6.5rem;
   background-image: url(../../assets/images/button.png);
   background-repeat: no-repeat;
-  color: #088178;
   font-weight: bold;
   cursor: pointer;
+}
+
+.hero button a {
+  color: #088178;
 }
 
 @media (max-width: 800px) {
