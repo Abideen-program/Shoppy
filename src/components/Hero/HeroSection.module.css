@@ -71,4 +71,8 @@
   .hero h2 {
     font-size: 3.2rem;
   }
+
+  .hero button{
+    padding: 1.4rem 2.5rem 1.4rem 3rem;
+  }
 }
