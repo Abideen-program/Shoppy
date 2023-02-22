@@ -1,23 +1,24 @@
 import { Link } from "react-router-dom";
-import blogImage from "../../../../assets/images/blog/b1.jpg";
 import classes from "./BlogItem.module.css";
 
-const BlogItem = () => {
+const BlogItem = (props) => {
+  const {item, index, array} = props
+  const {imgURL, title, paragraph, id} = item
+  console.log(index)
   return (
-    <div className={classes.blogBox}>
+    <div className={classes.blogBox} key={id}>
       <div className={classes.blogImage}>
-        <img src={blogImage} alt="blog" />
+        <img src={imgURL} alt="blog" />
       </div>
 
       <div className={classes.blogDetails}>
-        <h4>The Cotton-Jersey Zip-Up Hoodie</h4>
+        <h4>{title}</h4>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, magnam
-          fugit! Inventore, debitis cumque aut sunt, sed...
+          {paragraph}
         </p>
         <Link to='/blog'>Continue reading</Link>
       </div>
-      <h1>01/01</h1>
+      <h1>{`0${index + 1}`}/{`0${array.length}`}</h1>
     </div>
   );
 };
