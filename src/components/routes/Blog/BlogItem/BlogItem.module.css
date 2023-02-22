@@ -24,14 +24,14 @@
 }
 
 .blogDetails h4 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
-.blogDetails p{
-    font-size: 1.3rem;
-    color: #4f4d4d;
-    margin: 1rem 0;
-    text-align: justify;
+.blogDetails p {
+  font-size: 1.3rem;
+  color: #4f4d4d;
+  margin: 1rem 0;
+  text-align: justify;
 }
 
 .blogDetails a {
@@ -44,21 +44,41 @@
 }
 
 .blogDetails a::after {
-    content: '\f061';
-    font-family: 'Font Awesome 5 Free';
-    font-size: 1.2rem;
-    font-weight: 700;
-    margin-left: 1rem;
+  content: "\f061";
+  font-family: "Font Awesome 5 Free";
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 1rem;
 }
 
-.blogDetails a:hover{
-    color: #008178;
+.blogDetails a:hover {
+  color: #008178;
 }
 
-.blogBox h1{
-    position: absolute;
-    font-size: 7rem;
-    color: #c9cbce;
-    top: -7rem;
-    left: 0;
+.blogBox h1 {
+  position: absolute;
+  font-size: 7rem;
+  color: #c9cbce;
+  top: -7rem;
+  left: 0;
+}
+
+@media (max-width: 477px) {
+  .blogBox {
+    flex-direction: column;
+  }
+
+  .blogDetails,
+  .blogImage {
+    width: 100%;
+  }
+
+  .blogImage {
+    margin-right: 0;
+  }
+
+  .blogDetails h4 {
+    font-size: 1.8rem;
+    margin-top: 1rem;
+  }  
 }
