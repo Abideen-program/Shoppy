@@ -1,5 +1,15 @@
+import BlogBanner from "./BlogBanner/BlogBanner";
+import NewsLetter from "../../NewsLetter/NewsLetter";
+import Footer from "../../Footer/Footer";
+
 const Blog = () => {
-  return <h1>This is the Blog page</h1>;
+  return (
+    <>
+      <BlogBanner />
+      <NewsLetter />
+      <Footer />
+    </>
+  );
 };
 
 export default Blog;
