@@ -2,7 +2,7 @@ import Button from "../Button/Button";
 
 const UseBanners = (props) => {
   const { className, onBanner } = props;
-  const [h4, h2, p, boolean] = onBanner();
+  const [h4, h2, p, boolean] = onBanner;
 
   return (
     <div className={className}>
