@@ -1,5 +1,13 @@
+import AboutBanner from "./AboutBanner/AboutBanner";
+import NewsLetter from "../../NewsLetter/NewsLetter";
+import Footer from "../../Footer/Footer";
+
 const About = () => {
-  return <h1>This is the About page</h1>;
+  return <>
+  <AboutBanner />
+  <NewsLetter />
+  <Footer />
+  </>;
 };
 
 export default About;
