@@ -30,6 +30,10 @@
 }
 
 @media (max-width: 477px) {
+  .banner {
+    height: 15vh;
+  }
+
   .banner h2 {
     font-size: 2rem;
 
@@ -39,11 +43,5 @@
 
   .banner h4 {
     font-size: 1.6rem;
-  }
-}
-
-@media (max-width: 380px) {
-  .banner {
-    height: 30vh;
   }
 }

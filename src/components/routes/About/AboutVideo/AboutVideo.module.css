@@ -1,0 +1,41 @@
+.about-video {
+  padding: 0 8rem;
+}
+
+.about-video h2 {
+  font-size: 4.4rem;
+  text-align: center;
+}
+
+.about-video h2 a {
+  padding: 0;
+  text-decoration: underline;
+  font-size: 4.4rem;
+  color: blue;
+}
+
+.video {
+  width: 70%;
+  height: 100%;
+  margin: 1rem auto;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+}
+
+@media (max-width: 477px) {
+  .about-video {
+    padding: 0 4rem;
+  }
+
+  .about-video h2, .about-video h2 a{
+    font-size: 3rem;
+  }
+
+  .video{
+    width: 100%;
+  }
+}
