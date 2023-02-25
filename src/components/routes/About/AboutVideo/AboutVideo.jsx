@@ -5,7 +5,7 @@ import classes from "./AboutVideo.module.css";
 const AboutVideo = () => {
   return (
     <div className={classes['about-video']}>
-      <h2>Download our <Link to='home'>App</Link></h2>
+      <h2>Download our <Link to='/'>App</Link></h2>
       <div className={classes.video}>
         <video autoPlay muted controls loop src={video}></video>
       </div>
