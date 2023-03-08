@@ -51,12 +51,14 @@ a {
 }
 
 .navLinkContainer .links a:hover,
-.desktop .links a:hover {
+.desktop .links a:hover,
+.isactive {
   color: #088178;
 }
 
 .navLinkContainer .links a:hover::after,
-.desktop .links a:hover::after {
+.desktop .links a:hover::after,
+.isactive::after {
   content: "";
   background: #088178;
   width: 40%;

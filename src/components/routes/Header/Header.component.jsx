@@ -1,4 +1,4 @@
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, NavLink, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import CartIcon from "../../Cart/CartIcon.component";
 import classes from "./Header.module.css";
@@ -42,19 +42,54 @@ const Header = () => {
         {/* START OF WEB NAVLINKS */}
         <ul className={classes.desktop}>
           <li className={classes.links}>
-            <Link to="/">Home</Link>
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? classes.isactive : undefined
+              }
+              to="/"
+            >
+              Home
+            </NavLink>
           </li>
           <li className={classes.links}>
-            <Link to="shop">Shop</Link>
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? classes.isactive : undefined
+              }
+              to="shop"
+            >
+              Shop
+            </NavLink>
           </li>
           <li className={classes.links}>
-            <Link to="blog">Blog</Link>
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? classes.isactive : undefined
+              }
+              to="blog"
+            >
+              Blog
+            </NavLink>
           </li>
           <li className={classes.links}>
-            <Link to="about">About</Link>
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? classes.isactive : undefined
+              }
+              to="about"
+            >
+              About
+            </NavLink>
           </li>
           <li className={classes.links}>
-            <Link to="contact">Contact</Link>
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? classes.isactive : undefined
+              }
+              to="contact"
+            >
+              Contact
+            </NavLink>
           </li>
           <li className={classes.cart}>
             <CartIcon />
@@ -66,19 +101,54 @@ const Header = () => {
         {showNavLinks && (
           <ul className={classes.navLinkContainer}>
             <li className={classes.links} onClick={hideNav}>
-              <Link to="/">Home</Link>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? classes.isactive : undefined
+                }
+                to="/"
+              >
+                Home
+              </NavLink>
             </li>
             <li className={classes.links} onClick={hideNav}>
-              <Link to="shop">Shop</Link>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? classes.isactive : undefined
+                }
+                to="shop"
+              >
+                Shop
+              </NavLink>
             </li>
             <li className={classes.links} onClick={hideNav}>
-              <Link to="blog">Blog</Link>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? classes.isactive : undefined
+                }
+                to="blog"
+              >
+                Blog
+              </NavLink>
             </li>
             <li className={classes.links} onClick={hideNav}>
-              <Link to="about">About</Link>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? classes.isactive : undefined
+                }
+                to="about"
+              >
+                About
+              </NavLink>
             </li>
             <li className={classes.links} onClick={hideNav}>
-              <Link to="contact">Contact</Link>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? classes.isactive : undefined
+                }
+                to="contact"
+              >
+                Contact
+              </NavLink>
             </li>
             <li className={classes.cart} onClick={hideNav}>
               <CartIcon />
