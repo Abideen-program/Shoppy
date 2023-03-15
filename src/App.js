@@ -12,8 +12,6 @@ import { CartContext } from "./components/Cart/CartContext";
 import Payment from "./components/routes/Checkout/Payment/Payment";
 
 const App = () => {
-  //to hide and show the cart the cart
-  // const [isShown, setIsShown] = useState(false);
 
   const { cartShown, showResponse } = useContext(CartContext);
 
